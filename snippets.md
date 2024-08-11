@@ -28,3 +28,6 @@ Hello World
 ```
 
 Link to index.html file: [`index.html`](https://github.com/sabhriti-solutions/wb-wordpress-theme/blob/initial/index.html)
+
+link to bootstrap [css] (https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css) 
+link to bootstrap [js] (https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js)
