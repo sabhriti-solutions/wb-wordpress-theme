@@ -32,3 +32,27 @@ Link to index.html file: [`index.html`](https://github.com/sabhriti-solutions/wb
 link to bootstrap [css](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css) 
 
 link to bootstrap [js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js)
+
+`function.php`
+```
+function add_css()
+{
+    wp_enqueue_style('bootstrap-css', get_template_directory(). '/assets/css/bootstrap.min.css');
+}
+
+// to call wordpres hooks.
+add_action('wp_enqueue_style', 'add_css');
+
+
+function add_javascript()
+{
+    wp_enqueue_style('bootstrap-js', get_template_directory(). 'assets/js/bootstrap.min.css');
+}
+
+// to call wordpres hooks.
+add_action('wp_enqueue_scripts', 'add_javascript');
+
+```
+
+
+
