@@ -82,6 +82,116 @@ function add_javascript()
 ````
 
 
+`index.php`
+```
+<?php get_header(); ?>
+
+<body class="bg-body-tertiary">
+
+<div class="container">
+    <div class="row bg-body">
+        <header class="border-bottom lh-1 py-3">
+            <div class="row flex-nowrap justify-content-center align-items-center">
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-body-emphasis text-decoration-none" href="<?php home_url(); ?>">
+                        Training
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="row bg-body">
+        <div class="nav-scroller py-1 mb-3 border-bottom">
+            <nav class="nav nav-underline justify-content-start">
+                <a class="nav-item nav-link link-body-emphasis active" href="index.html">Home</a>
+                <a class="nav-item nav-link link-body-emphasis" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row bg-body-secondary">
+        <div class="p-4 mb-4 text-body-emphasis">
+            <h1 class="display-4 fst-italic">
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+            </h1>
+            <p class="h6">What is Lorem Ipsum?</p>
+            <p class="lead my-3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row bg-body-secondary">
+
+        <div class="col-6">
+            <div class="container">
+                <div class="row g-0 border rounded mb-4 shadow-sm bg-body">
+                    <div class="col-8 p-4">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Lorem Ipsum</h3>
+                        <div class="mb-1 text-body-secondary">Aug 11</div>
+                        <p class="mb-auto">
+                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit...
+                        </p>
+                        <a class="text-decoration-none gap-1 " href="blog.html">
+                            Continue reading
+                        </a>
+                    </div>
+                    <div class="col-4 p-4  border-start">
+                        <img alt="small pug" class="img-fluid w-100" src="small.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-6">
+
+            <div class="row g-0 border rounded mb-4 shadow-sm bg-body">
+                <div class="col-8 p-4">
+                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                    <h3 class="mb-0">Lorem Ipsum</h3>
+                    <div class="mb-1 text-body-secondary">Aug 11</div>
+                    <p class="mb-auto">
+                        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                        velit...
+                    </p>
+                    <a class="text-decoration-none gap-1 " href="blog.html">
+                        Continue reading
+                    </a>
+                </div>
+                <div class="col-4 p-4  border-start">
+                    <img alt="small pug" class="img-fluid w-100 " src="small.jpg"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+    <p>Blog template built for Wordpress theme development training.</p>
+    <p class="mb-0">&copy; Sabhriti 2024</p>
+</footer>
+
+<?php get_footer(); ?>
+```
+
+
+
+
+
 
 
 
