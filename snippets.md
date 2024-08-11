@@ -37,24 +37,49 @@ link to bootstrap [js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/boot
 ```
 <?php
 
-function add_css()
-{
-    wp_enqueue_style('bootstrap-css', get_template_directory(). '/assets/css/bootstrap.min.css');
-}
-
 // to call wordpres hooks.
 add_action('wp_enqueue_style', 'add_css');
-
-
-function add_javascript()
+function add_css()
 {
-    wp_enqueue_style('bootstrap-js', get_template_directory(). 'assets/js/bootstrap.bundle.min.js');
+    wp_enqueue_style(
+        'bootstrap-css',
+        get_parent_theme_file_uri('/assets/css/bootstrap.min.css'),
+        [],
+        '1.0',
+        'all'
+    );
 }
+
 
 // to call wordpres hooks.
 add_action('wp_enqueue_scripts', 'add_javascript');
 
+function add_javascript()
+{
+    wp_enqueue_style(
+        'bootstrap-js',
+        get_parent_theme_file_uri('/assets/js/bootstrap.bundle.min.js'),
+        [],
+        '1.0',
+        'all'
+    );
+}
 ```
+
+`header.php`
+```
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Training</title>
+    <?php wp_head(); ?>
+</head>
+
+````
+
+
 
 
 
