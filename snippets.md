@@ -35,6 +35,8 @@ link to bootstrap [js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/boot
 
 `function.php`
 ```
+<?php
+
 function add_css()
 {
     wp_enqueue_style('bootstrap-css', get_template_directory(). '/assets/css/bootstrap.min.css');
@@ -46,13 +48,14 @@ add_action('wp_enqueue_style', 'add_css');
 
 function add_javascript()
 {
-    wp_enqueue_style('bootstrap-js', get_template_directory(). 'assets/js/bootstrap.min.css');
+    wp_enqueue_style('bootstrap-js', get_template_directory(). 'assets/js/bootstrap.bundle.min.js');
 }
 
 // to call wordpres hooks.
 add_action('wp_enqueue_scripts', 'add_javascript');
 
 ```
+
 
 
 
