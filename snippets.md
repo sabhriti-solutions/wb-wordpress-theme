@@ -86,6 +86,21 @@ function add_javascript()
 ```
 <?php get_header(); ?>
 
+index.php
+
+<?php get_footer(); ?>
+```
+
+`homepage.php`
+```
+<?php
+/*
+Template Name: Homepage
+ */
+ ?>
+
+<?php get_header(); ?>
+
 <body class="bg-body-tertiary">
 
 <div class="container">
@@ -186,7 +201,9 @@ function add_javascript()
 </footer>
 
 <?php get_footer(); ?>
+
 ```
+
 
 
 
