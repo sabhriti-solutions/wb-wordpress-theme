@@ -27,3 +27,4 @@ Hello World
 </html>
 ```
 
+Link to index.html file: [](https://github.com/sabhriti-solutions/wb-wordpress-theme/blob/initial/index.html)
