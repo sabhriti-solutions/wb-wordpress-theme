@@ -66,6 +66,7 @@ function add_javascript()
         'all'
     );
 }
+
 ```
 
 `header.php`
