@@ -33,12 +33,14 @@ link to bootstrap [css](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 
 link to bootstrap [js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js)
 
-`function.php`
+`functions.php`
 ```
 <?php
 
+<?php
+
 // to call wordpres hooks.
-add_action('wp_enqueue_style', 'add_css');
+add_action('wp_enqueue_scripts', 'add_css');
 function add_css()
 {
     wp_enqueue_style(
